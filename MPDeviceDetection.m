@@ -22,6 +22,7 @@
 
 - (NSString *) platformString{
     NSString *platform = [self platform];
+// iOS platform string link http://theiphonewiki.com/wiki/Models
     if ([platform isEqualToString:@"iPhone2,1"])    return @"iPhone 3GS";
     if ([platform isEqualToString:@"iPhone3,1"])    return @"iPhone 4";
     if ([platform isEqualToString:@"iPhone3,2"])    return @"iPhone 4";
@@ -30,6 +31,10 @@
     if ([platform isEqualToString:@"iPhone4,2"])    return @"iPhone 4S";
     if ([platform isEqualToString:@"iPhone5,1"])    return @"iPhone 5";
     if ([platform isEqualToString:@"iPhone5,2"])    return @"iPhone 5 (GSM+CDMA)";
+    if ([platform isEqualToString:@"iPhone5,3"])    return @"iPhone 5C";
+    if ([platform isEqualToString:@"iPhone5,4"])    return @"iPhone 5C";
+    if ([platform isEqualToString:@"iPhone6,1"])    return @"iPhone 5S";
+    if ([platform isEqualToString:@"iPhone6,2"])    return @"iPhone 5S";
     
     if ([platform isEqualToString:@"iPod3,1"])      return @"iPod Touch (3 Gen)";
     if ([platform isEqualToString:@"iPod4,1"])      return @"iPod Touch (4 Gen)";
